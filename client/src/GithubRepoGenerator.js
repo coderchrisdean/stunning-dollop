@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
 import { Button, Container, Row, Col } from 'react-bootstrap';
-import axios from 'axios';
+import faker from 'faker';
 
 const GithubRepoGenerator = () => {
   const [repoName, setRepoName] = useState('');
 
   const generateRepo = async () => {
-    // Add your logic for generating a repository
+    const firstWord = faker.random.word();
+    const secondWord = faker.random.word();
+    const generatedRepoName = `${firstWord}-${secondWord}`;
+    setRepoName(generatedRepoName);
+    
   };
 
   return (

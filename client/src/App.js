@@ -1,5 +1,5 @@
 import React from 'react';
-import GithubRepoGenerator from './GithubRepoGenerator';
+import GithubRepoGenerator from '../../GithubRepoGenerator';
 import './App.css';
 
 function App() {
